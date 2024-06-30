@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+    background-image: url(assets/pista.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.Q{
+    background-image: url(assets/banner.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+
+    margin: 0px;
+    position: absolute;
+    transform: rotate(90deg);
+    font-family: f1;
+    z-index: 100;
+
+    font-size: 2vh;
+    color: rgb(202, 202, 202);
+    padding: 1vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    right: -45vh;
+    top: 46vh;
+    width: 70vh;
+    text-align: center;
+}
+
+.opciones{
+    background-color: #1a1a1ad3;
+    transform: rotate(90deg);
+    border: solid 0.3vh #9d9d9d;
+    border-radius: 1vh;
+    position: absolute;
+    height: 10vh;
+    width: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh;
+
+    transition: transform ease-in-out 0.5s;
+}
+
+.opciones img{
+    position: relative;
+    width: 100%;
+}
+
+@font-face {
+    font-family: f1;
+    src: url(fonts/f1regular.otf);
+}
+
+.flecha{
+    z-index: 10;
+    top: 42.5vh;
+    left: 52vw;
+    position: absolute;
+    height: 8vh;
+
+    transition: transform ease 1s;
+}
+
+.container {
+    width: 80vmin;
+    /* Ajusta el tamaño del volante */
+    height: 100vh;
+    border: none;
+
+    background-color: transparent;
+    background-image: url(assets/rb18.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 60%;
+
+    top: -3vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#wheel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -15vh;
+    background-image: url('assets/volante.gif');
+    /* Añade una imagen de volante */
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
