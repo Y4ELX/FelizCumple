@@ -19,6 +19,7 @@ body{
     font-family: f1;
     z-index: 100;
 
+    font-size: 2vh;
     color: rgb(202, 202, 202);
     padding: 1vh;
     padding-left: 15vh;
