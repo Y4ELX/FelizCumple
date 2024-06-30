@@ -68,5 +68,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
         return difference;
     }
->>>>>>> bf1b9d8dca85bd7ac0155d5bb6f77331ab23086c
 });
