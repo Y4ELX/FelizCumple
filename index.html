@@ -4,29 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steering Wheel</title>
+    <title>Feliz Cumple</title>
     <link rel="stylesheet" href="styles.css">
 
     <link rel="preload" href="assets/pista.gif" as="image">
+    <link rel="preload" href="assets/sobre.gif" as="image">
+    <link rel="preload" href="assets/sobreabierto.png" as="image">
+    <link rel="preload" href="assets/hoja.png" as="image">
+    <link rel="preload" href="assets/trofeo.png" as="image">
+    <link rel="preload" href="assets/monaco.png" as="image">
+    <link rel="preload" href="assets/monza.png" as="image">
+    <link rel="preload" href="assets/MS.png" as="image">
+    <link rel="preload" href="assets/LH.png" as="image">
+    <link rel="preload" href="assets/3.png" as="image">
+    <link rel="preload" href="assets/4.png" as="image">
+    <link rel="preload" href="assets/interm.png" as="image">
+    <link rel="preload" href="assets/fullwet.png" as="image">
+    <link rel="preload" href="assets/20pts.png" as="image">
+    <link rel="preload" href="assets/25pts.png" as="image">
+    <link rel="preload" href="assets/sobrestatic.png" as="image">
     <link rel="preload" href="assets/banner.png" as="image">
     <link rel="preload" href="assets/rb18.gif" as="image">
     <link rel="preload" href="assets/turnR.gif" as="image">
     <link rel="preload" href="assets/turnL.gif" as="image">
     <link rel="preload" href="assets/volante.gif" as="image">
     <link rel="preload" href="assets/arrow.png" as="image">
+    <link rel="preload" href="assets/sig.png" as="image">
 </head>
 
 <body>
-    <p class="Q">
+
+    <div id="bienvenida" class="bienvenida">
+        <p id="bienvenidaP" class="bienvenidaP">¡Feliz Cumpleaños pa!</p>
+
+        <button id="saltarBtn" class="saltarBtn">
+    </div>
+
+    <!--TODO INICIO-->
+
+    <div id="eval" class="eval">
+        <img id="imgP" class="imgP" src="assets/trofeo.png" alt="">
+        <p id="evalP" style=" transform: rotate(90deg); transform-origin: center;">Correcto</p>
+    </div>
+
+    <p id="Q" class="Q">
         ¿Cuál es el circuito más famoso y glamuroso de la Fórmula 1, conocido por sus calles estrechas y su túnel?
     </p>
 
+    <div id="cartaContainer" class="cartaContainer">
+        <img id="polaroid1" src="assets/pl1.png" style="z-index: -1; width: 20vh; position: absolute; top: 5vh; right: 5vh; transform: rotate(10deg); transition: ease 1s;" alt="">
+
+        <img id="polaroid2"  src="assets/pl3.png" style="z-index: -1; width: 20vh; position: absolute; top: 5vh; left: 5vh; transform: rotate(-10deg); transition: ease 1s;" alt="">
+
+        <img id="polaroid4" src="assets/pl2.png" style="z-index: -1; width: 20vh; position: absolute; bottom: 5vh; right: 5vh; transform: rotate(10deg); transition: ease 1s;" alt="">
+
+        <img id="polaroid3" src="assets/pl4.png" style="z-index: -1; width: 20vh; position: absolute; bottom: 5vh; left: 5vh; transform: rotate(-5deg); transition: ease 1s;" alt="">
+
+        <div class="sobre" id="sobre">
+            <div id="centerCont" class="centered-container">
+                <button id="cerrarBtn" style="width: 4vh; height: 4vh; border: none; position: absolute; bottom: 2vh; left: 2vh; background-image: url(assets/close.png); background-repeat: no-repeat; background-size: contain; background-position: center; ">   </button>
+                <p class="rotated-text">
+                    Hola pa,
+                    Feliz cumpleañoos y feliz día del padre🎉🎉
+                    <span style="color: #9a9a9a; font-size: 2vh;">(un poquito atrasado jeje pero habían unos problemitas técnicos)</span>
+    
+                    Te hice esta carta por que la verdad me cuesta un poco expresarme en persona, pero quiero decirte que significas muchísimo para mi.
+    
+                    Gracias por tu dedicación y todo el esfuerzo que has hecho por nosotros, quiero que sepas que estoy muy feliz por que estoy estudiando algo que me gusta, y sin ti nada de eso hubiera sido posible.
+    
+                    Admiro muchísimo tu forma de pensar, eres alguien muy inteligente y desde chiquito me gustaba como podías responderme cualquier duda por más mínima que sea y nunca me dejabas sin una respuesta.
+    
+                    Te quiero mucho y valoro cada momento que compartimos. Gracias por ser quien eres y por todo lo que has hecho por nosotros. Estoy muy feliz de que seas mi papá.
+    
+                    Con mucho cariño
+                    -Beto
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                </p>
+            </div>
+        </div>
+    </div>
+
     <div id="opt1" style="top: 10vh; left: 38vw;" class="opciones">
-        <img src="assets/monaco.png" alt="">
+        <div id="chargBar1" class="chargBar1"></div>
+        <img id="optImg1" src="assets/monaco.png" alt="">
     </div>
 
     <div id="opt2" style="top: 70vh; left: 38vw;" class="opciones">
-        <img src="assets/monza.png" alt="">
+        <div id="chargBar2" class="chargBar1"></div>
+        <img id="optImg2" src="assets/monza.png" alt="">
     </div>
 
     <img id="flecha" src="assets/arrow.png" class="flecha" alt="">
@@ -37,6 +125,4 @@
 
     <script src="script.js"></script>
 </body>
-
->>>>>>> bf1b9d8dca85bd7ac0155d5bb6f77331ab23086c
 </html>
